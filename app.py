@@ -4,9 +4,12 @@ app = Flask(__name__)
 
 # This is our data structure, a list of dictionaries
 # In a real-life scenario, this would be a database
-students = [
+students = [    
     {"id": 1, "name": "John", "course": "Physics"},
     {"id": 2, "name": "Sarah", "course": "Chemistry"},
+    {"id": 3, "name": "Bob", "course": "English"},
+    {"id": 4, "name": "Sebastian", "course": "French"},
+    {"id": 5, "name": "Jill", "course": "History"},
 ]
 
 @app.route('/students', methods=['GET'])
